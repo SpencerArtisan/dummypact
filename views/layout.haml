@@ -1,0 +1,33 @@
+!!! 5                                                                                                  
+%html{:lang => 'en'}
+  %head
+    %meta{:charset => 'utf-8'}
+    %title Artisan 
+    %link{:href => '/css/vendor/bootstrap.css', :rel => 'stylesheet', :type => 'text/css'}
+    %link{:href => '/css/vendor/bootstrap-responsive.css', :rel => 'stylesheet', :type => 'text/css'}
+    %style
+      body { padding-top: 60px; }
+
+  %body
+    #header
+      .navbar.navbar-inverse.navbar-fixed-top
+        .navbar-inner
+          .container
+            %a.brand Artisan 
+    #content
+      .container
+        = yield
+
+    #footer
+
+  %script{:src => '/js/vendor/jquery-1.7.2.js'}
+  %script{:src => '/js/vendor/jquery.validate.js'}
+  %script{:src => '/js/vendor/jquery-1.7.2.js'}
+  %script{:src => '/js/vendor/jquery.validate.js'}
+  %script{:src => '/js/vendor/jquery.placeholder.min.js'}
+  %script{:src => '/js/vendor/underscore.js'}
+  %script{:src => '/js/vendor/knockout-2.2.1.js'}
+  %script{:src => '/js/vendor/bootstrap-modal.js'}
+  %script{:src => '/js/vendor/prettify.js'}
+  %script{:src => '/js/vendor/vkbeautify.js'}
+  %script{:src => '/js/artisan.js'}
